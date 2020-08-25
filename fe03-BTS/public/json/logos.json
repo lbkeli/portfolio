@@ -1,0 +1,12 @@
+{
+	"logos": [
+		{"id": 1, "class": "logo logo1", "src1": "../img/home-2-client-img-1.png", "src2": "../img/home-2-client-haver-1.png"},
+		{"id": 2, "class": "logo logo2", "src1": "../img/home-2-client-img-2.png", "src2": "../img/home-2-client-haver-2.png"},
+		{"id": 3, "class": "logo logo3", "src1": "../img/home-2-client-img-3.png", "src2": "../img/home-2-client-haver-3.png"},
+		{"id": 4, "class": "logo logo4", "src1": "../img/home-2-client-img-4.png", "src2": "../img/home-2-client-haver-4.png"},
+		{"id": 5, "class": "logo logo5", "src1": "../img/home-2-client-img-5.png", "src2": "../img/home-2-client-haver-5.png"},
+		{"id": 6, "class": "logo logo6", "src1": "../img/home-2-client-img-6.png", "src2": "../img/home-2-client-haver-6.png"},
+		{"id": 7, "class": "logo logo7", "src1": "../img/home-2-client-img-7.png", "src2": "../img/home-2-client-haver-7.png"},
+		{"id": 8, "class": "logo logo8", "src1": "../img/home-2-client-img-8.png", "src2": "../img/home-2-client-haver-8.png"}
+	]
+}

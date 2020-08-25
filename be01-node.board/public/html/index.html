@@ -1,0 +1,73 @@
+<script>
+	/* 콜백 */
+	function nameView(fName, lName, cb) { // 필요한 인자와 콜백을 받음
+		var fullName = lName + ' ' + fName;
+		cb(fullName);
+	}
+
+	nameView('길동', '홍', function (name) {
+		alert(name);
+	});
+
+
+	/* Promise (ES6) */
+
+	function nameViewPromise(fName, lName) {
+		return new Promise(function (resolve, reject) { // resolve와 reject 모두 함수
+			if (fName && lName) { // fName, lName이 모두 존재한다면
+				const fullName = lName + ' ' + fName;
+				resolve(fullName);
+			} else { // fName, lName 중 하나라도 없다면
+				reject(err);
+			}
+		});
+	}
+
+	nameViewPromise('길동', '홍')
+		.then(function (result) { // then 절은 콜백개념 / nameViewPromise 실행 후 then 안의 함수를 실행해주세요
+			console.log(result);
+		})
+		.catch(function (err) { // 결과값을 가져올 수 없을 때 error를 캐치
+			console.log(err);
+		});
+
+	async function userMake() { // async : 비동기 함수입니다
+		var result = await nameViewPromise('길순', '홍'); // 기다렸다가 받을래
+		// var result2 = await nameChgPromise(result); 
+		// var result3 = await nameChgPromise(result2); 
+		console.log(result);
+	}
+	userMake();
+
+/* book.json 통신 */
+function getBooks(url, cb) {
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.status == 200 && xhr.readyState == 4) {
+			cb(JSON.parse(xhr.responseText)); // 자바스크립트 오브젝트가 됨
+		}
+	}
+	xhr.open("GET", url);
+	xhr.send();
+}
+
+function getBooks2(url) {
+	return new Promise(function (resolve, reject) {
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (xhr.staus == 200 && xhr.readyState == 4) {
+				var result = JSON.parse(xhr.responseText);
+				resolve(result);
+			}
+		}
+		xhr.open("GET", url);
+		xhr.send();
+	});
+}
+
+getBooks2('api/book/.json')
+.then(function(r){ console.log(r); }) // resolve를 실행했을 때 그 안에 있는 결과값을 받는애
+.catch(function(r){ console.log(r); }) 
+.finally(function(r){ console.log("통신성공"); })
+
+</script>

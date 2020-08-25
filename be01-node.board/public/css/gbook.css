@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Bree+Serif&display=swap');
+
+.title {font-family: 'Bree Serif', sans-serif;}
+html, body {font-family: 'Open Sans', sans-serif; font-size: 0.875rem;}
+
+.list-wrapper thead > tr {background-color: #e4e4e4;}
+.btn {background-color: #e4e4e4;}
+
+.list-wrapper th:nth-child(1) {width: 10%;}
+.list-wrapper th:nth-child(2) {width: 20%;}
+.list-wrapper th:nth-child(3) {width: 20%;}
+
+.page-item.active .page-link {
+	color: #fff!important;
+	background-color: #444;
+	border-color: #222;
+}
+
+.list-wrapper td:last-child {position: relative;}
+.list-wrapper td:last-child .gbook-delete {position: absolute; right: 10px; margin-top: 5px; text-decoration: none; cursor: pointer;}

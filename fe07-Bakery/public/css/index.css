@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* 
+font-family: 'Open Sans', sans-serif;
+*/
+
+/********** common ***********/
+.wrapper {width: 1100px; padding: 80px 16px; margin: auto;}
+.float-lt {width: 50%; float: left; padding-right: 16px;}
+.float-rt {width: 50%; float: right; padding-left: 16px;}
+.page-title {text-align: center; font-size: 36px; font-family: 'Open Sans', sans-serif; letter-spacing: 5px; font-weight: normal; padding: 1rem 0;}
+.page-slogan {text-align: center; font-size: 18px; font-family: 'Open Sans', sans-serif; letter-spacing: 5px; font-weight: lighter; padding: 6px 0 16px 0;}
+.op70 {opacity: 0.7;}
+
+/********** header ***********/
+.header {
+	font-family: 'Nanum Myeongjo', serif;
+	padding: 0.25rem 1rem; 
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); 
+	position: fixed; 
+	width: 100%; 
+	background-color: #fff; 
+	z-index: 9;
+}
+.logo {
+	float: left;
+	width: 180px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.logo:hover {
+	opacity: 0.6; 
+}
+.navi-wrap {
+	float: right;
+}
+.navi {
+	float: left; 
+	padding: 16px;
+}
+.navi:hover {
+	background-color: #eee; 
+	cursor: pointer;
+}
+
+/********** main-wrap ***********/
+.main-wrap {
+	max-width: 100%;
+	position: relative;
+}
+	
+.main-wrap img {height: 100vh;}
+.main-wrap > .title {
+	font-family: 'Nanum Myeongjo', serif;
+	font-weight: 700;
+	font-size: 3rem; 
+	color: #fff; 
+	position: absolute; 
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+	letter-spacing: 5px;
+}
+
+/********** about-wrap ***********/
+.about-wrap {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 2rem;
+}
+.page-cont {
+	line-height: 150%; 
+	font-family: 'Open Sans', sans-serif;
+}
+.page-cont .cont-title {
+	font-family: 'Nanum Myeongjo', serif;
+	font-weight: 800;
+	font-size: 1.125rem;
+	margin: 0.875rem 0 0.75rem 0;
+}
+.page-cont .underline {
+	background-color: rgb(248, 239, 230);
+	color: #222;
+	font-size: 0.875rem;
+	display: inline-block;
+	padding: 0.125rem 0.25rem;
+	font-weight: bold;
+	margin-bottom: 0.25rem;
+}
+.page-cont .sub {
+	font-size: 0.875rem;
+	margin-bottom: 0.5rem;
+}
+.page-cont.cont2 {
+	color: #999;
+}
+
+/********** menu-wrap ***********/
+.menu-wrap {
+	border-bottom: 1px solid #ccc;
+}
+.menu-list {
+	margin-bottom: 30px;
+}
+.menu-title {
+	padding: 20px 0; 
+	letter-spacing: 5px; 
+	font-size: 18px; 
+	font-family: 'Open Sans', sans-serif;
+}
+.menu-desc {
+	font-family: 'Nanum Myeongjo', serif;
+	color: #999; 
+	font-size: 1rem;
+}
+
+/********** contact-wrap ***********/
+.contact-wrap .page-title {
+	text-align: left;
+}
+.contact-wrap p {
+	padding: 16px 0; 
+	line-height: 150%; 
+	font-size: 1rem; 
+	font-family: 'Nanum Myeongjo', serif;
+}
+.contact-wrap .address {
+	color: #7da4a8; 
+	font-size: 18px;
+}
+.contact-form input, .contact-form button {
+	font-family: 'Nanum Myeongjo', serif;
+}
+.contact-form input {
+	padding: 16px; 
+	width: 100%; 
+	border: none; 
+	border-bottom: 1px solid #ccc;
+}
+.form-list {padding: 12px 0;}
+.contact-form .bt-send {
+	padding: 12px 16px; 
+	background-color: #eee; 
+	border: none;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.contact-form .bt-send:hover {
+	background-color: #ccc;
+}
+
+/********** footer ***********/
+.footer {
+	background-color: #eee; 
+	padding: 60px 0; 
+	text-align: center; 
+	font-size: 14px; 
+	font-family: 'Noto Serif', serif;
+}
+.footer a {
+	color: #000;
+	transition: all 0.3s;
+}
+.footer a:hover {color: #747474;}

@@ -1,0 +1,11 @@
+{
+	"prds" : [
+		{"id": 1, "title": "Shack Burger", "price": "￦ 6,9", "src": "../img/burger_200402_01.jpg", "link": "#"},
+		{"id": 2, "title": "Jalapeno Randch Burger", "price": "￦ 10,4", "src": "../img/burger_200630.jpg", "link": "#"},
+		{"id": 3, "title": "Shack Stack", "price": "￦ 12,4", "src": "../img/burger_200402_04.jpg", "link": "#"},
+		{"id": 4, "title": "Smoke Shack", "price": "￦ 8,9", "src": "../img/burger_200402_02.jpg", "link": "#"},
+		{"id": 5, "title": "Classic Hand-spun Shakes", "price": "￦ 5,9", "src": "../img/custard_200402_02.jpg", "link": "#"},
+		{"id": 6, "title": "Jalapeno Ranch Fries", "price": "￦ 5,4", "src": "../img/fries_200630.jpg", "link": "#"},
+		{"id": 7, "title": "Bag 0-Bones", "price": "￦ 6,0", "src": "../img/woof_200402_01.jpg", "link": "#"}
+	]
+}

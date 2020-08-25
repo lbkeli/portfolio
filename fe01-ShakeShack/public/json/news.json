@@ -1,0 +1,14 @@
+{
+	"news": [
+		{"id": 1, "src": "../img/news.jpg", "title": "July, Jalapeno Ranch New Menu Launch!", "cont": "Full of spicy charm!<br>Once you fall in, you can't get out of it, so be careful!", "date": "2020-06-29", "badge": ["New Menu"], "tag": ["New Menu", "29th June 2020", "1,974 Read"] },
+
+		{"id": 2, "src": "../img/new4.jpg", "title": "New menu launch emoticon event!", "cont": "Follow Shake Shack Instagram and participate in the comment event.<br>We'll give you a new menu in July, jalapenos ranch fries as a gift.", "date": "2020-07-01", "badge": ["News", "Event"], "tag": ["News, Recipes", "By james", "1st July 2020", "11,323 Likes"] },
+
+		{"id": 3, "src": "../img/news2.png", "title": "Signature concrete of Shake Shack at Dongseongno", "cont": "It's already delicious Dalgona Deagu by sight.<br>Enjoy Shake Shack Daegu Dongseongno Store.", "date": "2020-07-13", "badge": ["News", "Signature"], "tag": ["News", "Signature menu", "13th July 2020", "1 comment"] },
+
+		{"id": 4, "src": "../img/news3.jpg", "title": "July New Menu, Apricot Lemonade Launch", "cont": "With fresh lemon aid,<br>Sweet apricot puree met me.<br>Seasonal Apricot Lemon Aid!", "date": "2020-07-01", "badge": ["New Menu"], "tag": ["New Menu", "1st July 2020", "49 Read"] },
+
+		
+		{"id": 5, "src": "../img/news5.png", "title": "A chocolate assembly house 'Shack Attack!'", "cont": "5% of the Shack attack sales to the Korean Federation for Environmental Movement.<br>Don't forget that you will be donated.", "date": "2020-06-19", "badge": ["News", "Donate"], "tag": ["Donate", "16th June 2020", "1 Comments"] }
+	]
+}

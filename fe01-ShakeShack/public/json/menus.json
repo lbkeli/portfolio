@@ -1,0 +1,41 @@
+{
+	"menus": [
+		{"id": 1,  "src": "../img/burger_200630.jpg", "title": "Jalapeno Ranch Burger", "price": "￦ 10,4"},
+		{"id": 2,  "src": "../img/burger_200402_01.jpg", "title": "ShackBurger", "price": "￦ 6,9"},
+		{"id": 3,  "src": "../img/burger_200402_02.jpg", "title": "Smoke Shack", "price": "￦ 8,9"},
+		{"id": 4,  "src": "../img/burger_200402_03.jpg", "title": "Shroom Burger", "price": "￦ 9,4"},
+		{"id": 5,  "src": "../img/burger_200402_04.jpg", "title": "Shack Stack", "price": "￦ 12,4"},
+		{"id": 6,  "src": "../img/burger_200402_05.jpg", "title": "Hamburger", "price": "￦ 5,4"},
+		{"id": 7,  "src": "../img/chicken_200630_02.jpg", "title": "Jalapeno Ranch Chick'n Shack", "price": "￦ 9,5"},
+		{"id": 8,  "src": "../img/chicknshack_200529.jpg", "title": "Chick'n Shack", "price": "￦ 7,9"},
+		{"id": 9,  "src": "../img/shackdog_200529.jpg", "title": "Shack-cago Dog", "price": "￦ 5,5"},
+		{"id": 10, "src": "../img/hotdog_200402_01.jpg", "title": "Hot Dog", "price": "￦ 4,4"},
+		{"id": 11, "src": "../img/fries_200630.jpg", "title": "Jalapeno Ranch Fries", "price": "￦ 5,4"},
+		{"id": 12, "src": "../img/fries_200402_02.jpg", "title": "Cheese Fries", "price": "￦ 4,9"}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

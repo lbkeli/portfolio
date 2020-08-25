@@ -1,0 +1,14 @@
+h1.logo.title BoKyung's Boards
+ul.navi-wrap
+	//- each는 pug에서 지원하는 반복문 (소스에서 안보임)
+	each v in navis
+		if v.login != undefined
+			if user.userid && v.login
+				li.navi
+					a(href=`${v.link}`)= v.name
+			if !user.userid && !v.login
+				li.navi
+					a(href=`${v.link}`)= v.name
+		else 
+			li.navi
+				a(href=`${v.link}`)= v.name

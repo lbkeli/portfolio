@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700;800&family=Noto+Sans+KR&display=swap');
+
+html, body {font-family: 'Cormorant Garamond', serif;}
+.kr {font-family: 'Noto Sans KR', sans-serif;}
+.en {font-family: 'Open Sans', sans-serif;}
+
+/*********** 공통사항 ************/
+.wrapper {max-width: 1800px; margin: auto; padding: 0 25px;}
+.wrapper-sm {max-width: 1300px; margin: 100px auto;}
+.font-os {font-family: 'Open Sans', sans-serif; letter-spacing: 0.2rem; font-size: 0.75rem; font-weight: 600;}
+.title-sub {font-size: 0.75rem; margin-bottom: -0.75rem;}
+.title-cont {color: #888; font-size: 1.25rem;}
+.card-columns .card {border: none; margin-bottom: 3rem;} .card-img, .card-img-top {border-top-left-radius: unset; border-top-right-radius: unset;}
+.card-body {padding: 1.5rem 0;}
+.card-columns {column-gap: 2rem;}
+.card-date {margin-top: 1rem;}
+.bt-up {width: 50px; height: 50px; bottom: 2rem; right: 2rem; transition: all 0.5s;}
+
+.card-img, .card-img-bottom, .card-img-top {width: auto;}
+img {vertical-align: middle;}
+
+/*********** header ************/
+.header {color: #222;}
+.header .navi {font-size: 0.875rem; font-weight: 800;}
+.header .navi::after {content: ""; display: block; border-bottom: 1px solid #222; transition: all 0.3s; opacity: 0;}
+.header .navi:hover::after {opacity: 1;}
+.header .navi.active::after {opacity: 1;}
+.header .mo-wrap {display: flex; display: flex; flex-direction: column; align-items: flex-start;}
+.header .mo-bars {font-size: 0.875rem;}
+.header .sns-wrap .sns {margin-left: 1rem; font-size: 1rem; transition: all 0.3s; color: #333;}
+.header .sns-wrap .sns:hover {opacity: 0.6;}
+.header .sch-wrap {border-radius: 30px; background-color: #f0f0f0; list-style: none;}
+.header .sch-wrap input {border: none; background-color: transparent; margin-left: 1rem;}
+.header .sch-wrap input:focus {outline: none;}
+.header .sch-wrap .sch-text {color: #777;}
+
+/*********** main-wrapper ************/
+.main-wrapper > div {background-repeat: no-repeat; background-position: center; background-size: cover;}
+.main-wrapper .slogan-wrap {flex: 35% 0 0; padding: 7% 5%; background-image: url('../img/background-1.jpg');}
+.main-wrapper .banner {flex: 65% 0 0; background-image: url('../img/main.png'); background-position: left center; transition: all 0.5s;}
+.main-wrapper .title {font-size: 3rem; font-weight: 600; margin: 2rem 0;}
+.main-wrapper .title-cont {font-size: 1rem; line-height: 170%;}
+.main-wrapper .title-sub {letter-spacing: 2px;}
+
+/*********** link-wrapper ************/
+.link-wrapper .link {flex: 31% 0 0; padding: 5rem 3rem;}
+.link-wrapper .link .title {font-size: 2.5rem; font-weight: 500;}
+.link-wrapper .link:nth-child(1) {background-color: #f7f7f4;}
+.link-wrapper .link:nth-child(2) {background-color: #f2f2f6;}
+.link-wrapper .link:nth-child(3) {background-color: #faf2ef;}
+.link-wrapper .banner {font-size: 4.5rem; background-image: url('../img/background-3.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.link-wrapper .photo {cursor: pointer;}
+
+/*********** post-wrapper ************/
+.post-wrapper > .title {font-size: 3rem;}
+.post-wrapper > .title-cont {font-size: 1rem} 
+.post-wrapper .card-title {font-size: 1.25rem; font-weight: 600;}
+.post-wrapper .card-text {font-size: 0.875rem;}
+.post-wrapper .card-img-wrap {overflow: hidden; background-color: #000;}
+.post-wrapper .card-img-top {cursor: pointer; transition: all 0.5s;}
+.post-wrapper .card-img-top:hover {transform: scale(1.1); opacity: 0.8;}
+
+/*********** blog-wrapper ************/
+.blog-wrapper .title-wrap {background-image: url('../img/background-4.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 5% 5%; margin-bottom: 5rem;}
+.blog-wrapper .titles {flex: 40% 0 0; color: #fff;}
+.blog-wrapper .signature {flex: 40% 0 0; padding-left: 5rem;}
+.blog-wrapper .titles .title-sub {font-weight: 700;}
+.blog-wrapper .titles .title {font-size: 6.5rem; line-height: 90%;}
+.blog-wrapper .card-title {font-size: 1.25rem; font-weight: 600;}
+.blog-wrapper .card-text {font-size: 0.875rem;}
+.blog-wrapper .card-img-wrap {overflow: hidden; background-color: #000;}
+.blog-wrapper .card-img-top {cursor: pointer; transition: all 0.5s;}
+.blog-wrapper .card-img-top:hover {transform: scale(1.1); opacity: 0.8;}
+
+/*********** news-wrapper ************/
+.news-wrapper {background: url('../img/background-5.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 10% 5%;}
+.news-wrapper .title {flex: 45% 0 0; font-size: 3.5rem;}
+.news-wrapper .form-subcribe {flex: 55% 0 0;}
+.news-wrapper .subscribe {width: 60%; padding: 0.5rem; border: none; background-color: transparent; border-bottom: 1px solid #fff; outline: none; color: #fff;}
+.news-wrapper .subscribe::placeholder {color: #fff;}
+
+/*********** footer ************/
+.footer {color: #888;}
+.footer .title {color: #222; font-size: 1.25rem; font-weight: 600;}
+.footer .title-cont {font-size: 1rem;}
+.footer .py-2 a {font-size: 0.875rem; font-weight: 500;}
+.footer .sns-wrap {color: #222;}
+.footer .sns, .footer li {transition: all 0.3s;}
+.footer .copyright:hover, .footer .sns:hover {opacity: 0.6;}
+.footer .copyright {font-size: 0.875rem; letter-spacing: -1px; transition: all 0.3s;}
+.footer a {font-size: 1.25rem; color: inherit; text-decoration: none;}
+.footer a:hover {color: #bbb;}
+.footer .bt-join {font-size: 0.875rem; margin: 0.5rem 0;}
+
+/*********** 반응형 ************/
+@media screen and (max-width: 1799px) {
+	.wrapper {max-width: 1730px; padding: 0 60px;}
+}
+@media screen and (max-width: 1160px) {
+	.header .sch-wrap {width: 30%!important;}
+}
+
+@media screen and (max-width: 991px) {
+	.header .sch-wrap {display: none!important;}
+	.header .sns-wrap {display: none!important;}
+
+	.wrapper {max-width: 1790px; padding: 0 20px;}
+	.main-wrapper {margin-top: 1.25rem;}
+	.main-wrapper .slogan-wrap {padding: 10% 15%;}
+	.main-wrapper .banner {height: 500px;}
+	.card-columns {column-count: 2;}
+	.news-wrapper {padding: 10%;}
+}
+
+@media screen and (max-width: 768px) {
+	.link-wrapper .banner {font-size: 2rem;}
+	.news-wrapper {padding: 15% 10%;}
+}
+
+@media screen and (max-width: 576px) {
+	.link-wrapper .banner {font-size: 1.75rem;}
+	.card-columns {column-count: 1;}
+	.news-wrapper {padding: 20% 10%;}
+}

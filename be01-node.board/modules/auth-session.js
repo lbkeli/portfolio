@@ -1,0 +1,29 @@
+const { alert } = require('./util');
+const { queryExecute } = require('./mysql-conn')
+
+const isAdmin = (req, res, next) => {
+	if(req.session.user && req.session.user.grade == 9) next();
+	else res.send(alert('정상적인 접근이 아닙니다.', '/'));
+}
+const isUser = (req, res, next) => { // request 요청 들어왔을 때
+	if(req.session.user && req.session.user.userid) next();
+	else res.send(alert('회원만 사용 가능합니다. 로그인 후 사용하세요', '/member/login'));
+}
+const isUserApi = (req, res, next) => { // Ajax 요청 들어왔을 때
+	if(req.session.user && req.session.user.userid) next();
+	else res.json({error: {code: 500, msg: '정상적인 접근이 아닙니다.'}});
+}
+const isGuest = (req, res, next) => {
+	if(!req.session.user || !req.session.user.userid) next();
+	else res.send(alert('정상적인 접근이 아닙니다. 로그아웃 후에 이용하세요.', '/'));
+}
+const isMine = async (req, res, next) => {
+	let id = req.query.id || req.params.id || req.body.id;
+	let uid = req.session.user.id;
+	let sql = `SELECT * FROM gallery WHERE id=${id} AND uid=${uid}`;
+	let result = await queryExecute(sql);
+	if(result.affectedRows > 0) next();
+	else res.send(alert('본인의 글만 접근 가능합니다.', '/'));
+}
+
+module.exports = { isAdmin, isUser, isUserApi, isGuest, isMine };

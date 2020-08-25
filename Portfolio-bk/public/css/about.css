@@ -1,0 +1,261 @@
+/********** common **********/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+html, body {font-family: 'Kanit', sans-serif;}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #bba8dc;
+  position: relative;
+  padding: 65px 40px 40px 40px;
+}
+.wrapper * {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.navi-icon {
+  position: absolute;
+  left: 50%;
+	top: 15px;
+  transform: translateX(calc(-50%));
+  cursor: pointer;
+  z-index: 9999;
+}
+.dash-border {
+  height: 100%;
+  border: 0.1875rem dashed #713694;
+  transition: all 0.5s;
+	padding: 7% 8% 3% 8%;
+	overflow-y: auto;
+}
+
+.modal-navi-wrap {
+  width: 100%; 
+  height: 100vh;
+  position: fixed; 
+  top: 0; left: 0;
+  z-index: 10000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.modal-navi-wrap .modal-wrap {
+  width: 65%; height: 65%;
+  background-color: #f9e0a2;
+  position: relative;
+  top: 7.5vh;
+}
+.modal-navi-wrap .modal-wrap > .modal-body {
+  width: 100%; height: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  padding: 1rem;
+}
+.modal-navi-wrap .bt-close {
+  width: 50px; height: 50px;
+  border: none;
+  background-color: #e24444;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0; right: 0;
+  cursor: pointer;
+}
+.modal-navi-wrap h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 10vh;
+  font-weight: 900;
+  text-align: center;
+  color: #e97f65;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  
+  background-size: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: unset;
+}
+.modal-navi-wrap a:link {color: inherit; text-decoration: none;}
+.modal-navi-wrap a:visited {color: inherit;}
+.modal-navi-wrap a:hover {color: inherit;}
+.modal-navi-wrap a:active {color: inherit;}
+.modal-navi-wrap img {width: 60%;}
+/***************************************************/
+
+.page-wrapper {
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-wrapper {
+  flex: 23% 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.page-title {
+  height: 20%;
+  position: relative;
+}
+.page-title h1 {
+  font-size: 4.875rem;
+  color: #fff;
+  opacity: 30%;
+  letter-spacing: -5px;
+  transition: all 0.5s;
+}
+.page-title h1:nth-child(1){transform: translateY(-2.25rem);}
+.page-title h1:nth-child(2){transform: translateY(-6rem);}
+.page-title .title-deco img {width: 80%;}
+.page-title .title-deco {
+  position: absolute;
+  top: 4rem;
+  left: 7.25rem;
+  transition: all 0.5s;
+}
+
+.bk-wrap {
+  color: #713694;
+  font-family: 'GmarketSansLight';
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+.bk-wrap img {
+  width: 70%;
+  margin: 3.5rem 0 1.5rem 0;
+  transition: all 1s;
+}
+
+.bk-wrap h3 {
+  font-family: 'GmarketSansBold';
+  font-size: 2.25rem;
+  font-style: italic; 
+  font-weight: 900;
+  margin-bottom: 0.75rem;
+  margin-top: -2rem;
+}
+
+.right-wrapper {
+  flex: 75% 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.right-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-style: italic;
+  color: #713694;
+  text-shadow: 3px 3px 2px #f768bd;
+  flex: 100% 0 0;
+  margin: 0 0 1rem 4rem;
+}
+.right-wrapper h3 {
+  font-family: 'GmarketSansBold';
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f9ced9;
+  margin: 0 0 1rem -0.125rem;
+}
+.right-wrapper p {
+  font-family: 'GmarketSansLight';
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: #fde7e9;
+}
+.skill-wrapper {
+  flex: 70% 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skill-wrapper .box {
+  margin-bottom: 1rem;
+}
+.skill-wrapper .graphs {
+  width: 240px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.skill-wrapper .graph {
+  padding: 5px 0;
+}
+.skill-wrapper .design-wrap .graph {background: linear-gradient(0.25turn, #ffce9f, #ff849c);}
+.skill-wrapper .publishing-wrap .graph {background: linear-gradient(0.25turn, #74bce5, #b2ddad);}
+.skill-wrapper .development-wrap .graph {background: linear-gradient(0.25turn, #c1bfe6, #ea88de);}
+.graph {width: 0;}
+
+.contact-wrapper {
+  flex: 30% 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contact-wrapper h2 {
+  height: 30%;
+}
+.contact-wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translateY(-1rem);
+}
+.contact-wrapper img {width: 40px; transition: all 0.5s;}
+.contact-wrapper img:first-child {width: 30px;}
+.contact-wrapper p {margin-left: 1rem;}
+.contact-wrapper a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 1440px) {
+  .dash-border {overflow-y: unset; padding: 4% 0 0 0;}
+  .page-wrapper {display: block; width: 100%; height: 80%; margin-top: 3rem;}
+  .page-title {position: relative;}
+  .page-title h1 {font-size: 4.5rem; letter-spacing: -4px; position: fixed;}
+  .page-title h1:nth-child(1) {top: 6rem; left: 3.5rem;}
+  .page-title h1:nth-child(2) {top: 13rem; left: 3.5rem;}
+  .page-title .title-deco {position: fixed; top: 9.5rem; left: 10.5rem;}
+  .page-title .title-deco img {width: 80%;}
+  .bk-wrap {display: none;}
+  .right-wrapper h2 {font-size: 2rem;}
+  .right-wrapper {flex: 100% 0 0; height: 100%; padding-top: 3rem;}
+}
+@media screen and (max-width: 1024px) {
+  .page-title h1 {font-size: 3rem; letter-spacing: -2px; position: fixed;}
+  .page-title h1:nth-child(1) {top: 6.5rem; left: 3.5rem;}
+  .page-title h1:nth-child(2) {top: 12.5rem; left: 3.5rem;}
+  .page-title .title-deco {position: fixed; top: 8.125rem; left: 8.25rem;}
+  .page-title .title-deco img {width: 50%;}
+  .skill-wrapper .graphs {width: 22vw;}
+  .right-wrapper h3 {font-size: 1rem;}
+  .right-wrapper p {font-size: 0.875rem;}
+  .contact-wrapper > div {transform: translateY(0); margin: 0 2%;}
+  .contact-wrapper img {width: 30px;}
+  .contact-wrapper img:first-child {width: 20px;}
+}
+@media screen and (max-width: 880px) {
+  .modal-navi-wrap .modal-wrap > .modal-body {padding: 2rem 1rem;}
+  .modal-navi-wrap h2 {font-size: 8vh;}
+  .right-wrapper p {font-size: 0.75rem;}
+  .skill-wrapper > div {margin: 0 1%;}
+  .contact-wrapper > div {transform: translateY(0); margin: 0 0;}
+  .contact-wrapper img {width: 20px;}
+  .contact-wrapper p {margin-left: 0.5rem;}
+}
+@media screen and (max-width: 600px) {
+  .modal-navi-wrap h2 {font-size: 6vh;}
+} 

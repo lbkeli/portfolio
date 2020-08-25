@@ -1,0 +1,40 @@
+{
+	"banners": [
+		{
+			"src": "../img/banner1.jpg", 
+			"title": "CHAHONG ARDOR", 
+			"desc": "아뜰리에 & 아티스트", 
+			"class": "type-c",
+			"buttons": [
+				{"title":"GIVE IT A TRY NOW", "link": "#", "class":"bt-ghost"}
+			] 
+		},
+		{
+			"src": "../img/banner3.jpg",
+			"title": "CHAHONG ROOM", 
+			"desc": "휴식 뒤에 오는 아름다움", 
+			"class": "type-c",
+			"buttons": [
+				{"title":"SEE OUR ROOMS", "link": "#", "class":"bt-ghost"}
+			]
+		},
+		{
+			"src": "../img/banner2.jpg",
+			"title": "CHAHONG COSMETIC", 
+			"desc": "Salon After Care", 
+			"class": "type-c",
+			"buttons": [
+				{"title":"BUY NOW", "link": "#", "class":"bt-ghost"}
+			]
+		},
+		{
+			"src": "../img/banner4.jpg",
+			"title": "CHAHONG ACADEMY", 
+			"desc": "인성 / 지성 / 감성", 
+			"class": "type-l",
+			"buttons": [
+				{"title":"Purchase NOW", "link": "#", "class":"bt-ghost"}
+			]
+		}
+	]
+}
