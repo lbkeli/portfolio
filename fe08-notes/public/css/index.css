@@ -1,0 +1,33 @@
+/*********** 공통사항 ************/
+.wrapper {height: 100vh;}
+
+/*********** header ************/
+.header {height: 80px;}
+.header .logo {font-size: 1.5rem;}
+
+/*********** body-wrapper ************/
+.body-wrapper {height: calc(100vh - 80px);}
+.body-wrapper > .list-wrapper {flex: 30% 0 0; height: 100%; background-color: #f4f0f0; border-right: 3px solid #ccc; overflow-y: auto; left: 0; overflow-y: auto; transition: left 0.5s;}
+.body-wrapper > .cont-wrapper {flex: 70% 0 0; height: 100%;}
+.body-wrapper > .cont-wrapper > textarea {height: calc(100% - 60px); font-size: 1.5rem;}
+.card > .bt-del {top: 10px; right: 10px; color: rgb(212, 71, 83); cursor: pointer;}
+.logout-wrap .bt-logout::after {content: " 로그아웃"}
+
+/*********** 반응형 ************/
+@media screen and (max-width: 911px) {
+.body-wrapper > .list-wrapper {flex: 40% 0 0;}
+.body-wrapper > .cont-wrapper {flex: 60% 0 0;}
+}
+@media screen and (max-width: 767px) {
+.body-wrapper > .list-wrapper {flex: 50% 0 0;}
+.body-wrapper > .cont-wrapper {flex: 50% 0 0;}
+.logout-wrap .icon, .logout-wrap .email {display: none;}
+}
+@media screen and (max-width: 575px) {
+.header .logo {font-size: 1.25rem;}
+.header .logo small {display: none;}
+.list-wrapper {position: fixed; top: 80px; left: -100%; z-index: 999;}
+.body-wrapper > .list-wrapper {width: 80%; box-shadow: 6px 0 16px rgba(0,0,0,0.5);}
+.body-wrapper > .cont-wrapper {flex: 100% 0 0;}
+.logout-wrap .bt-logout::after {content: ""}
+}
