@@ -49,17 +49,18 @@ function onModalWrap(e) {
 
 /******* 내비게이션 호버 *******/
 $(".modal-h2-1").hover(function(){
-  $(this).css({"color": "#ffd1d1", "background-image": "url(../img/modal-bar.png)"});
+	$(this).css({"color": "#ffd1d1", "background-image": "url(../img/modal-bar.png)"});
 }, function(){
-  $(this).css({"color": "#e97f65", "background-image": "unset"});
+	$(this).css({"color": "#e97f65", "background-image": "unset"});
 });
 $(".modal-h2-2").hover(function(){
-  $(this).css({"color": "#ffd1d1", "background-image": "url(../img/modal-bar2.png)"});
+	$(this).css({"color": "#ffd1d1", "background-image": "url(../img/modal-bar2.png)"});
 }, function(){
-  $(this).css({"color": "#e97f65", "background-image": "unset"});
+	$(this).css({"color": "#e97f65", "background-image": "unset"});
 });
 
-var liY = ['0vw', '2vw','11vw', '21vw', '31vw'], liX = ['0vw', '27vw','15vw', '2vw', '20vw'];
+/******* 텍스트 움직임 효과 *******/
+var liY = ['0vw', '2vw','11vw', '21vw', '31vw'], liX = ['0vw', '27vw','15vw', '2vw', '15vw'];
 
 $(window).mousemove(onMove);
 function onMove(e) {

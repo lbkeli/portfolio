@@ -195,7 +195,7 @@ html, body {width: 100%; font-family: 'Poppins', sans-serif; overflow-x: hidden;
 }
 .booking-wrap .wrap-txt {color: #fff; width: 100%; margin: 0 auto 1rem auto;}
 .booking-wrap .booking-form {width: 90%; max-width: 970px; height: 410px; padding: 3rem; margin: 0 auto; backdrop-filter: blur(10px);}
-.booking-wrap .booking-form input {cursor: pointer;  width: 100%; display: inline-block; vertical-align: top;  background-color: transparent; border: none; border-bottom: 1px solid #fff; font-size: 1rem; font-weight: 300;}
+.booking-wrap .booking-form input {cursor: pointer;  width: 100%; display: inline-block; vertical-align: top;  background-color: transparent; border: none; border-bottom: 1px solid #fff; font-size: 1rem; font-weight: 300; color: #fff;}
 .booking-wrap .booking-form > div {display: flex; justify-content: space-evenly;}
 .booking-wrap .booking-form-top input {flex: 48% 0 0; margin: 0 18px; padding: 2px 0;  font-size: 0.875rem;}
 .booking-wrap .booking-form-bottom input {flex: 100% 0 0; height: 100%; margin: 0 18px; padding: 2rem 0 8rem 0;font-size: 1rem;}

@@ -1,6 +1,6 @@
 {
   "backend": [
-    {"id": 1, "title": "Node를 사용한<br>Board", "during": "2주", "renewal": "Node를 사용하여 방명록, 회원가입,<br>갤러리 등을 구축한 Board입니다.", "used": "Node.js, passport, HTML, CSS, <br>Javascript, jQuery", "skill": "<span style='margin-right: 8px;'>#반응형</span><span>#API</span>를 활용한 위치 찾기<br><span>#JSON</span>을 통해 동적 생성한 슬라이드", "colorName1": "#6eb43f", "colorName2": "#e7b35a", "font1": "Lemon", "font2": "Noto Sans KR", "videoSrc": "../work/be1.mp4", "siteHref": "http://lbkeli.gabia.io/gbook"},
-    {"id": 2, "title": "날씨예보 어플<br>(Pc, Mobile)", "during": "1주", "renewal": "현재 위치 기반 날씨예보 어플", "used": "Vue, openweathermap", "skill": "<span style='margin-right: 8px;'>#반응형</span><span>#JSON</span>을 통해 동적 생성한 슬라이드", "colorName1": "#6eb43f", "colorName2": "#e7b35a", "font1": "Lemon", "font2": "Noto Sans KR", "videoSrc": "../work/fe2.mp4", "siteHref": "https://weather-lbk.web.app"}
+    {"id": 1, "title": "Node.js를<br>사용한 Board", "during": "2주", "renewal": "Node를 사용하여 방명록, 회원가입,<br>갤러리 등을 구축한 Board입니다.", "used": "Node.js, passport,<br> HTML, CSS, Javascript, jQuery", "skill": "<span style='margin-right: 8px;'>#반응형</span><span>#API</span>를 활용한 위치 찾기<br><span>#JSON</span>을 통해 동적 생성한 슬라이드", "colorName1": "#bf938e", "colorName2": "#e2c8c6", "font1": "Bree Serif", "font2": "Open Sans", "videoSrc": "../work/be1.mp4", "siteHref": "http://lbkeli.gabia.io/gbook"},
+    {"id": 2, "title": "날씨예보 어플<br>(Pc, Mobile)", "during": "1주", "renewal": "현재 위치 기반 날씨예보 어플", "used": "Vue, openweathermap", "skill": "<span style='margin-right: 8px;'>#반응형</span><br><span>#JSON</span>을 통해 동적 생성한 슬라이드", "colorName1": "#6eb43f", "colorName2": "#e7b35a", "font1": "Lemon", "font2": "Noto Sans KR", "videoSrc": "../work/fe2.mp4", "siteHref": "https://weather-lbk.web.app"}
   ]
 }

@@ -220,6 +220,7 @@ html, body {font-family: 'Kanit', sans-serif; overflow: hidden;}
   width: 100%;
   font-size: 0.75rem;
 }
+.sub-wrap .color-box {background-color: #fff;}
 .sub-wrap .font-wrap {
   margin-left: 2rem;
 }
