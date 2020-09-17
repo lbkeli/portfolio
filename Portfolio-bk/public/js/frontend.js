@@ -159,11 +159,3 @@ function onResize() {
 		rtAni = {"opacity": 0, "top": "200%"};
   }
 } 
-
-/*
-(function($){
-  $(window).on("load",function(){
-      $(".content").mCustomScrollbar();
-  });
-})(jQuery);
-*/
