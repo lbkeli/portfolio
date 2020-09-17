@@ -1,6 +1,6 @@
 {
   "frontend": [
-    {"id": 1, "title": "쉑쉑버거<br>사이트 리뉴얼", "during": "1주", "renewal": "브랜드의 메인 색상을 사용하여,<br> 메뉴를 한 눈에 볼 수 있게 리뉴얼", "used": "HTML, CSS, Javascript,<br>jQuery, JSON, Kakao Map", "skill": "<span style='margin-right: 8px;'>#반응형</span><span>#API</span>를 활용한 위치 찾기<br><span>#JSON</span>을 통해 동적 생성한 슬라이드", "colorName1": "#6eb43f", "colorName2": "#e7b35a", "font1": "Lemon", "font2": "Noto Sans KR", "videoSrc": "../work/fe1.mp4", "siteHref": "https://bk-shakeshack.web.app"},
+    {"id": 1, "title": "쉑쉑버거<br>사이트 리뉴얼", "during": "1주", "renewal": "브랜드의 메인 색상을 사용하여,<br> 메뉴를 한 눈에 볼 수 있게 리뉴얼", "used": "HTML, CSS, JS ES5/6,<br>jQuery, JSON, Kakao Map API 연동", "skill": "<span style='margin-right: 8px;'>#반응형</span><span>#API</span>를 활용한 위치 찾기<br><span>#AJAX</span>를 통한<span>#JSON</span>데이터의 동적 생성", "colorName1": "#6eb43f", "colorName2": "#e7b35a", "font1": "Lemon", "font2": "Noto Sans KR", "videoSrc": "../work/fe1.mp4", "siteHref": "https://bk-shakeshack.web.app"},
 
     {"id": 2, "title": "BTS<br>사이트 리뉴얼", "during": "1주", "renewal": "BTS의 앨범, 콘서트, 굿즈 등의 정보들을<br>한눈에 볼 수 있게 리뉴얼", "used": "HTML, CSS, Javascript,<br>jQuery, JSON", "skill": "<span style='margin-right: 8px;'>#반응형</span><br><span>#JSON</span>을 통해 동적 생성한 슬라이드", "colorName1": "#38214a", "colorName2": "&nbsp; #ffffff", "font1": "Poppins", "font2": "", "videoSrc": "../work/fe3.mp4", "siteHref": "https://bts-bk.web.app"},
 

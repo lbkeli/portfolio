@@ -95,7 +95,7 @@ function onFrontEndLoad(r){
     html += '<a href="'+r.frontend[i].siteHref+'" target="_blank" class="bt-view-mo">View Site</a>';
     html += '<img src="../img/f-site-top-800.png" alt="리뉴얼사이트" class="site-top img">';
     html += '<div class="site-video">';
-    html += '<video muted autoplay loop>';
+    html += '<video muted autoplay loop preload>';
     html += '<source src="'+r.frontend[i].videoSrc+'" type="video/mp4">';
     html += '</video>';
     html += '</div>';
@@ -160,8 +160,10 @@ function onResize() {
   }
 } 
 
+/*
 (function($){
   $(window).on("load",function(){
       $(".content").mCustomScrollbar();
   });
 })(jQuery);
+*/
