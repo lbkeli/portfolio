@@ -143,7 +143,6 @@ function pfAni() {
     $(this).stop().animate({"opacity": 1, "bottom": 0}, 500);
   });
   $(".right-wrapper").css("z-index", 10000).stop().animate(rtAni, 300, function(){
-    // $(".dash-border").css("overflow-y", "hidden")
     pfInit();
     $(this).stop().animate({"opacity": 1, "top": 0}, 500);
   });

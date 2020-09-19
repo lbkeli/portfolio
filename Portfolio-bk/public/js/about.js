@@ -14,7 +14,7 @@ function onModalOpen() {
   $(".modal-navi-wrap").css({"display": "flex", "animation-name": "flipInY"});
 }
 function onModalClose() {
-  $(".modal-navi-wrap").css({/* "display": "none",  */"animation-name": "flipOutY"});
+  $(".modal-navi-wrap").css({"animation-name": "flipOutY"});
   setTimeout(function(){
     $(".dash-border").css({"z-index": 0});
     $(".dash-border section").css({"opacity": 1, "transition": "all 0.5s"});
@@ -70,16 +70,4 @@ $(".bk-wrap img").hover(function(){
 }, function(){
   $(this).css({"transform": "rotate(0)", "transition": "all 0.5s"});
 });
-
-bkCursor();
-function bkCursor() {
-  // document.getElementById("char").style.cursor = url(cursor1.cur);
-}
-
-/* var charMove = setInterval(function(){
-  $(".bk-wrap img").css("transform", "rotate(10deg)");
-  setTimeout(function(){
-    $(".bk-wrap img").css("transform", "rotate(-10deg)");
-  }, 500);
-}, 1000); */
 
