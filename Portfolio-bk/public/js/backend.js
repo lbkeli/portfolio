@@ -76,7 +76,7 @@ function onBackEndLoad(r){
     html += '</div>';
     html += '<div class="color2">';
     html += '<div class="color-box cb2" style="background-color:'+r.backend[i].colorName2+';"></div>';
-    html += '<div class="color-name">'+r.backend[i].colorName1+'</div>';
+    html += '<div class="color-name">'+r.backend[i].colorName2+'</div>';
     html += '</div>';
     html += '</div>';
     html += '</div>';
@@ -95,7 +95,7 @@ function onBackEndLoad(r){
     html += '<a href="'+r.backend[i].siteHref+'" target="_blank" class="bt-view-mo">View Site</a>';
     html += '<img src="../img/f-site-top-800.png" alt="리뉴얼사이트" class="site-top img">';
     html += '<div class="site-video">';
-    html += '<video muted autoplay loop>';
+    html += '<video muted loop autoplay poster="'+r.backend[i].poaster+'">';
     html += '<source src="'+r.backend[i].videoSrc+'" type="video/mp4">';
     html += '</video>';
     html += '</div>';
