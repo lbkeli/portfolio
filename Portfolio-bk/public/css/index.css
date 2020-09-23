@@ -98,8 +98,8 @@ body, html {overflow: hidden;}
 .char-icon {
   width: 15rem;
   position: absolute;
-  bottom: 11vw;
-  right: 4vw;
+  bottom: 15vw;
+  right: 9vw;
   z-index: 998;
   transform: rotate(10deg) scale3d(0, 0, 0);
   transition: all 0.5s;
@@ -112,8 +112,8 @@ body, html {overflow: hidden;}
   border-radius: 50%;
   background-color: #fadc41;
   position: absolute;
-  bottom: 8vw;
-  right: 2vw;
+  bottom: 13vw;
+  right: 6vw;
   transition: all 1s;
 }
  
