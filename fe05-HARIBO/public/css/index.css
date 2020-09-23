@@ -156,12 +156,12 @@
 	opacity: 0;
 }
 .main-wrap .slide-conts .slide-title {
-	font-size: 4vw;
+	font-size: 5rem;
 }
 .main-wrap .slide-conts .slide-sub {
 	margin-top: 5vw;
 	margin-left: 1vw;
-	font-size: 1.5vw;
+	font-size: 2rem;
 	line-height: 180%;
 	width: 60%;
 }
@@ -375,6 +375,8 @@
 /********** 반응형 **********/
 @media screen and (max-width: 1400px) {
 	.header {padding: 0 3rem 0 2rem;}
+	.main-wrap .slide-conts .slide-title {font-size: 3rem;}
+	.main-wrap .slide-conts .slide-sub {display: none;}
 }
 
 @media screen and (max-width: 991px) {
